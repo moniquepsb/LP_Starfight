@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starfight</title>
+  <link rel="stylesheet" href="./src/stylesheets/styles.css" />
+  <link rel="stylesheet" href="./src/stylesheets/cards_style.css">
+</head>
+
+<body>
+  <main>
+    <img style="width: 100%" src="./src/assets/backgroud/bg__top.svg" alt="bg__top" />
+
+    <section>
+      <div class="p1--content">
+        <img class="p1--logo" src="./src/assets/logo__starfight.svg" alt="STARFIGHT" />
+        <div class="p1--text">
+          <h1>ESCOLHA SEU LUTADOR</h1>
+          <p>
+            Nesse jogo de Fantasy Fight acompanhe seu campeão em partidas
+            minuto a <br />minuto, com detalhes e estatísticas! Ganhando a
+            luta você consegue pontos para <br />melhorar as habilidades do
+            seu lutador e subir no ranking. Seja um campeão!
+          </p>
+          <button class="btn--login">
+            <span>LOGIN COM GOOGLE</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="p2--content">
+      <div class="char">
+        <div class="card" id="defaultCard">
+          <img src="./src/assets/cards/card__alskaire.svg" alt="Älskaire" id="champImg" />
+        </div>
+        <div class="versus">
+          <img src="./src/assets/vs.svg" alt="versus" />
+        </div>
+        <div class="card">
+          <img src="./src/assets/cards/card__panda.svg" alt="Panda" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO ESCOLHA SUA PERSONAGEM -->
+
+    <div id="champion-info" class="hidden">
+      <!-- Aqui serão exibidas as informações do campeão -->
+    </div>
+
+    <!-- VER O HOVER DOS CAMPEÕES-->
+    <section class="p3--charAvatar">
+      <div class="avatar-grid">
+        <div id="char.avatar" class="char-avatar">
+          <img src="./src/assets/avatar/avatar__ravik.svg" alt="Ravik" id="ravik" />
+          <img src="./src/assets/avatar/avatar__alskare.svg" alt="Älskare" id="alskaire" />
+          <img src="./src/assets/avatar/avatar__p4nda.svg" alt="P4nda" id="panda" />
+          <img src="./src/assets/avatar/avatar__mestre--calvo.svg" alt="Mestre Calvo" id="calvo" />
+          <img src="./src/assets/avatar/avatar__toguro.svg" alt="Toguro" id="toguro" />
+          <img src="./src/assets/avatar/avatar__selina.svg" alt="Selina" id="selina" />
+          <img src="./src/assets/avatar/avatar__naomi.svg" alt="Naomi" id="naomi" />
+          <img src="./src/assets/avatar/avatar__cybervara.svg" alt="Cybervara" id="cybervara" />
+          <img src="./src/assets/avatar/avatar__robot.svg" alt="Robot" id="robot" />
+          <img src="./src/assets/avatar/avatar__claus.svg" alt="Claus" id="claus" />
+          <img src="./src/assets/avatar/avatar__ellaria.svg" alt="Ellaria" id="ellaria" />
+          <img src="./src/assets/avatar/avatar__beatrix.svg" alt="Beatrix" id="beatrix" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE ÚLTIMAS LUTAS -->
+
+    <section class="p4--lastFight">
+      <div class="lastFightTitle">
+        <span>ÚLTIMAS LUTAS</span>
+        <hr>
+      </div>
+
+      <!-- CARDS -->
+
+      <div class="lastFightContent">
+
+        <!--CARD 1 -->
+        <div class="CARD__lastFight">
+          <div class="card__bg">
+            <div class="card-content">
+              <span class="cat__peso" style="background-color: #ff045d;">peso pesado</span>
+              <span class="CLF_date">20/03</span>
+            </div>
+
+            <div class="CLF_name">
+              <span class="name-char">Naomi x P/nda</span>
+              <span class="wins">Naomi Wins!</span>
+            </div>
+
+            <div class="avatar--lastFight">
+              <img class="naomi1" src="./src/assets/avatar/avatar__naomi.svg" alt="Naomi" />
+              <img class="versus1" src="./src/assets/vs.svg" alt="Versus" />
+              <img class="p4nda1" src="./src/assets/avatar/avatar__p4nda.svg" alt="P4nda" />
+            </div>
+
+            <div class="score">
+              <span class="naomi-score">3</span>
+              <span class="p4nda-score">0</span>
+            </div>
+
+            <div class="img-ko1">
+              <img class="ko1" src="./src/assets/ko.svg" alt="KO!" />
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 2 -->
+        <div class="CARD__lastFight">
+          <div class="card__bg">
+            <div class="card-content">
+              <span class="cat__peso" style="background-color: #2A5AE4;"">peso pena</span>
+                      <span class=" CLF_date">19/03</span>
+            </div>
+
+            <div class="CLF_name">
+              <span class="name-char">Claus x P/nda</span>
+              <span class="wins">P/nda Wins!</span>
+            </div>
+
+            <div class="avatar--lastFight">
+              <img class="naomi1" src="./src/assets/avatar/avatar__claus.svg" alt="Klaus"></img>
+              <img class="versus1" src="./src/assets/vs.svg" alt="Versus"></img>
+              <img class="p4nda1" src="./src/assets/avatar/avatar__p4nda.svg" alt="P4nda"></img>
+            </div>
+
+            <div class="score">
+              <span class="naomi-score">1</span>
+              <span class="p4nda-score">2</span>
+            </div>
+
+            <div class="img-ko1">
+              <img class="ko1" src="./src/assets/ko.svg" alt="KO!" />
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 3 -->
+        <div class="CARD__lastFight">
+          <div class="card__bg">
+            <div class="card-content">
+              <span class="cat__peso" style="background-color: #FA7E00;">peso médio</span>
+              <span class="CLF_date">10/03</span>
+            </div>
+
+            <div class="CLF_name">
+              <span class="name-char">Älskare x Naomi</span>
+              <span class="wins">Älskare Wins!</span>
+            </div>
+
+            <div class="avatar--lastFight">
+              <img class="naomi1" src="./src/assets/avatar/avatar__alskare.svg" alt="Älskare"></img>
+              <img class="versus1" src="./src/assets/vs.svg" alt="Versus"></img>
+              <img class="p4nda1" src="./src/assets/avatar/avatar__naomi.svg" alt="Naomi"></img>
+            </div>
+
+            <div class="score">
+              <span class="naomi-score">3</span>
+              <span class="p4nda-score">0</span>
+            </div>
+
+            <div class="img-ko1">
+              <img class="ko1" src="./src/assets/ko.svg" alt="KO!" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE PRÓXIMAS LUTAS -->
+
+    <section class="p5--nextFight">
+      <div class="nextFightTitle">
+        <span>PRÓXIMAS LUTAS</span>
+        <hr>
+      </div>
+
+      <!-- CARDS -->
+
+      <div class="lastFightContent">
+
+        <!--CARD 1 -->
+        <div class="CARD__nextFight">
+          <div class="card__bg">
+            <div class="card-content">
+              <span class="cat__peso" style="background-color: #2A5AE4;"">peso pena</span>
+            </div>
+
+            <div class=" CLF_name">
+                <span class="name-char">Naomi x P/nda</span>
+                <div class="endDate">
+                  <span class="endDate">20/03</span>
+                  <span class="endDate">11h</span>
+                </div>
+            </div>
+
+            <div class="avatar--nextFight">
+              <img class="naomi1" src="./src/assets/avatar/avatar__naomi.svg" alt="Naomi" />
+              <img class="versus1" src="./src/assets/vs.svg" alt="Versus" />
+              <img class="p4nda1" src="./src/assets/avatar/avatar__p4nda.svg" alt="P4nda" />
+            </div>
+
+            <br><br><br><br>
+          </div>
+        </div>
+
+        <!--CARD 2 -->
+        <div class="CARD__nextFight">
+          <div class="card__bg">
+            <div class="card-content">
+              <span class="cat__peso" style="background-color: #ff045d;">peso pesado</span>
+              <!-- <span class=" CLF_date">20/03</span> -->
+            </div>
+
+            <div class="CLF_name">
+              <span class="name-char">Älskare x Claus</span>
+              <div class="endDate">
+                <span class="endDate">01/03</span>
+                <span class="endDate">20h</span>
+              </div>
+            </div>
+
+            <div class="avatar--nextFight">
+              <img class="naomi1" src="./src/assets/avatar/avatar__alskare.svg" alt="Älskare" />
+              <img class="versus1" src="./src/assets/vs.svg" alt="Versus" />
+              <img class="p4nda1" src="./src/assets/avatar/avatar__claus.svg" alt="Claus" />
+            </div>
+
+            <br><br><br><br>
+          </div>
+        </div>
+
+        <!--CARD 3 -->
+        <div class="CARD__nextFight">
+          <div class="card__bg">
+            <div class="card-content">
+              <span class="cat__peso" style="background-color: #FA7E00;">peso médio</span>
+            </div>
+
+            <div class="CLF_name">
+              <span class="name-char">Naomi x P/nda</span>
+              <div class="endDate">
+                <span class="endDate">25/03</span>
+                <span class="endDate">19h</span>
+              </div>
+            </div>
+
+            <div class="avatar--nextFight">
+              <img class="naomi1" src="./src/assets/avatar/avatar__naomi.svg" alt="Naomi" />
+              <img class="versus1" src="./src/assets/vs.svg" alt="Versus" />
+              <img class="p4nda1" src="./src/assets/avatar/avatar__p4nda.svg" alt="P4nda" />
+            </div>
+
+            <br><br><br><br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button class="saibaMais">SAIBA MAIS COMO JOGAR</button>
+
+    <div class="socialMedia">
+      <img class="disc" src="./src/assets/vec_discord.svg" alt="Discord did.lu">
+      <img class="insta" src="./src/assets/vec_instagram.svg" alt="Instagram did.lu">
+    </div>
+
+    <div class="bg-bottom">
+      <img src="./src/assets/bg_bottom.svg" alt="">
+    </div>
+
+
+    <script src="/src/js/hover-champ.js"></script>
+  </main>
+
+</body>
+
+</html>

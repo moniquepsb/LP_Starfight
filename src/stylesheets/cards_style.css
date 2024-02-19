@@ -1,0 +1,233 @@
+
+
+/* cards_style.css */
+
+/* ESTILO ÚLTIMAS LUTAS */
+
+.p4--lastFight { 
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 50px;
+}
+
+.lastFightTitle span {
+  color: var(--primary-color);
+  font-family: var(--highvoltage-font);
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 12px;
+   
+}
+
+.lastFightContent, .nextFightTitle {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.CARD__lastFight {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #a457a1, #eb324f);
+  margin-right: 20px;
+  width: 215px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card__bg {
+    background-image: url('../assets/grid_landscape6 2.png');
+    background-position: bottom; /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita a repetição da imagem */
+    position: relative; /* para garantir que outros elementos fiquem sobre a imagem de fundo */ 
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  padding: 15px;
+}
+
+.CARD__lastFight {
+  transform: perspective(1500px) rotateY(15deg);
+  transition: transform 1s ease 0s;
+}
+
+.CARD__lastFight:hover {
+  transform: perspective(3000px) rotateY(5deg);
+}
+
+.CARD__nextFight {
+  transform: perspective(1500px) rotateY(-15deg);
+  transition: transform 1s ease 0s;
+  cursor: pointer;
+}
+
+.CARD__nextFight:hover {
+  transform: perspective(3000px) rotateY(-5deg);
+}
+
+.cat__peso {
+  color: var(--primary-color);
+  font-family: var(--sec-font);
+  text-align: center;
+  width: 105px;
+  height: 22px;
+  padding: 5px 0 0 0;
+  background-color: #ff045d;
+  border-radius: 5px;
+  margin: 0 0 0px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.CLF_date {
+  color: var(--primary-color);
+  font-family: var(--archivo-font);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 0 0 0;
+}
+
+.name-char {
+  display: flex;
+  color: var(--primary-color);
+  padding: 0 0 5px 0px;
+  border-bottom: 2px solid white;
+  font-family: var(--archivo-font);
+  font-size: 14px;
+  font-weight: 400;
+  width: 185px;
+}
+
+.wins {
+  display: flex;
+  color: var(--primary-color);
+  margin-top: 16px;
+  font-family: var(--archivo-font);  
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.CLF_name {
+  padding: 0 0 0 15px;
+}
+
+.avatar--lastFight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.naomi1 {
+  width: 61px;
+  height: 61px;
+  border-radius: 58%;
+}
+
+.versus1 {
+  width: 61px;
+  height: 61px;
+  border-radius: 58%;
+  position: absolute;
+}
+
+.p4nda1 {
+  width: 61px;
+  height: 61px;
+  border-radius: 58%;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+  color: var(--primary-color);
+  font-family: var(--archivo-font);
+  font-weight: 800;
+  font-size: 16px;
+  padding-right: 9px;
+  margin-top: 8px;
+}
+
+.img-ko1 {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 15px 0;
+}
+
+hr {
+  border-color: #806FC0;
+  width: 77vw;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+
+/* ESTILO PRÓXIMAS LUTAS */
+
+
+.p5--nextFight {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 70px 100px 0 0;
+}
+
+.nextFightTitle span {
+  color: var(--primary-color);
+  margin: 0 50px 0 0;
+  font-family: var(--highvoltage-font);
+}
+
+.nextFightTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  color: var(--primary-color);
+  font-family: var(--highvoltage-font);
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 12px;
+}
+
+.CARD__nextFight {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #8F26A0, #FFA800);
+  margin-right: 20px;
+  width: 215px;
+  border-radius: 8px;
+  /* padding: 15px; */
+}
+
+.endDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3px;
+  padding-right: 8px;
+  font-family: var(--archivo-font);
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.avatar--nextFight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 40px;
+  padding: 0 15px;
+}
